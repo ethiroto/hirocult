@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background image for the entire site */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/deerpic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Set the min-height property for the body to ensure it covers the entire viewport */
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.fb-title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 80px;
+    -webkit-text-stroke: 1px #4cdc4c;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    margin-top: 130px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
