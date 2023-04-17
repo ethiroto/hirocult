@@ -1,10 +1,38 @@
-.image-frame{
-    width: 800px;
-    height: 400px;
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
     overflow: hidden;
 }
-.image-frame img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.gif-container img {
+    display: block;
+    max-width: 35%; /* Adjust this value to control the size of the GIF */
+    margin-top: -90px; /* Adjust this value to control how much of the top is cut off */
 }
+
+.bg{
+    background-color: rgb(217, 246, 246);
+}
+
+.os-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    scale: 90%;
+    margin-top: -750px;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/NES.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
