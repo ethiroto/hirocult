@@ -11,6 +11,12 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 /* Set the background image for the entire site */
 .bg-img {
     position: fixed;
@@ -34,8 +40,9 @@ body {
 .fb-title{
     margin-top: 20px;
     text-align: center;
+    font-family: "Futura";
     font-size: 80px;
-    -webkit-text-stroke: 1px #efefef;
+    color: aquamarine;
 }
 
 .image-grid {
@@ -51,5 +58,23 @@ body {
     height: auto;
     object-fit: cover;
 }
+
+.home img{
+    position: fixed;
+    bottom: .1vh;
+    right: .1vh;
+    z-index:10;
+    padding: .1vh;
+}
+.home span{
+    position: fixed;
+    z-index:11;
+    bottom: 2px;
+    right: 48px;
+    padding: 1vh;
+    color:cornflowerblue;
+
+}
+
 
 
