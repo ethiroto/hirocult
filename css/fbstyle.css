@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'NES';
+    src: url('../fonts/NES.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 /* Set the background image for the entire site */
 .bg-img {
     position: fixed;
@@ -28,7 +35,7 @@ body {
     margin-top: 20px;
     text-align: center;
     font-size: 80px;
-    -webkit-text-stroke: 1px #4cdc4c;
+    -webkit-text-stroke: 1px #efefef;
 }
 
 .image-grid {

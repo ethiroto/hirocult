@@ -1,38 +1,93 @@
-body, html {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     height: 100%;
 }
 
-.gif-container {
+.container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+}
+
+.page-container-top {
     display: flex;
     justify-content: center;
+    align-self:start;
     align-items: flex-start;
-    height: 100%;
-    overflow: hidden;
+    background-color: ;
 }
 
-.gif-container img {
-    display: block;
-    max-width: 35%; /* Adjust this value to control the size of the GIF */
-    margin-top: -90px; /* Adjust this value to control how much of the top is cut off */
-}
-
-.bg{
-    background-color: rgb(217, 246, 246);
-}
-
-.os-container{
+.page-container-bot {
     display: flex;
     justify-content: center;
+    align-self: start;
     align-items: flex-start;
-    height: 100%;
-    scale: 90%;
-    margin-top: -750px;
+    background-color: ;
 }
 
-@font-face {
-    font-family: 'CustomFont';
-    src: url('/fonts/NES.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    background-color: ;
+}
+
+.title img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+.os{
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    width: 60%;
+    height: 100%;
+    transform: translateY(-18vh); 
+    position: relative;
+
+}
+.os img{
+    width: 90%;
+    height: 100%;
+    object-fit:contain;
+    position:relative;
+    z-index: -1;
+}
+
+.os-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: contain;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%; /* Adjust grid gap */
+    padding: 30% 30% 50% 15%; /* Adjust padding */
+    position: absolute;
+    z-index: 1;
+    background: none; /* Remove the background color */
+    scale: 110%;
+}
+
+.os-text {
+    text-align: center;
+    transform: translateX(-.5vh); 
+}
+
+.os a img {
+    transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.os a:hover img {
+    image-rendering:crisp-edges;
+}
