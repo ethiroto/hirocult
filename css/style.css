@@ -32,8 +32,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 20%;
+    width: 25%;
     margin-bottom: 1%;
 }
 
@@ -50,11 +49,10 @@ body, html {
     display: flex;
     justify-content: center;
     align-self: start;
-    width: 60%;
     height: 100%;
     transform: translateY(-18vh); 
     position: relative;
-
+    margin-top: .6vh;
 }
 .os img{
     width: 90%;
@@ -95,3 +93,14 @@ body, html {
 .os a:hover img {
     image-rendering:crisp-edges;
 }
+
+
+
+@media (max-width: 768px) {
+    .title{
+    width: 40%
+        
+    }
+    
+}
+

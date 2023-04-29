@@ -55,7 +55,6 @@ body {
 
 .image-grid img {
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
@@ -74,6 +73,19 @@ body {
     padding: 1vh;
     color:cornflowerblue;
 
+}
+
+@media (max-width: 768px) {
+    .fb-title{
+      scale: 140%
+    }
+    .image-grid{
+      grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+      padding: 10px;
+      margin-top: 13%;
+
+    }
+    
 }
 
 
