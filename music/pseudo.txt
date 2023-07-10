@@ -1,0 +1,4 @@
+create an array of all the file names in the songs directory
+assign the filenames to the html for the song ids
+assign each song to a howler object 
+
