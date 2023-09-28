@@ -5,6 +5,15 @@
     font-weight: normal;
     font-style: normal;
   }
+  h1{
+    font-family: 'Windows95', sans-serif;
+    text-align: center;
+    width: 100%;  /* ensures the text container spans the entire width */
+    position: absolute;  /* takes it out of the normal flow */
+    top: 0;  /* aligns it at the top of the container */
+    left: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* drop shadow */
+  }
 
   .music-player {
     width: 400px;
@@ -36,16 +45,17 @@
 
 @media only screen and (max-width: 600px) {
     .music-player {
-      top: 5%;
-      left: -4.5%;
-      scale: 90%;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9); /* translate centers it and scale reduces its size to 90% */
     }
-    .directory-window{
-        top: 30%;
-        left: -18%;
-        scale: 70%;
+    .directory-window {
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.7); /* translate centers it and scale reduces its size to 70% */
     }
-  }
+}
+
 
 
 
@@ -198,10 +208,6 @@
     margin: 5px 0;
 }
 
-
-
-
-
 .window-header {
     background: linear-gradient(to right, navy, #1084d0); /* Gradient */
     display: flex;
@@ -258,3 +264,40 @@
     align-items: center;
 }
 
+.home img{
+    position: fixed;
+    bottom: .1vh;
+    right: .1vh;
+    z-index:10;
+    scale: 60%;
+}
+.home span{
+    position: fixed;
+    z-index:11;
+    bottom: 2px;
+    right: 48px;
+    padding: 1vh;
+    color:cornflowerblue;
+    scale: 80%;
+}
+
+#secret-text{
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#secret-input{
+    width: 20%;  /* ensures the text container spans the entire width */
+    position: absolute;  /* takes it out of the normal flow */
+    top: 0;  /* aligns it at the top of the container */
+    left: 40%;
+    margin-top: 140px;
+}
+#secret-btn{
+    width: 10%;  /* ensures the text container spans the entire width */
+    position: absolute;  /* takes it out of the normal flow */
+    top: 0;  /* aligns it at the top of the container */
+    left: 46%;
+    margin-top: 180px;
+    font-family: 'Windows95', sans-serif;
+}

@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Windows95';
+    src: url('../fonts/w95fa.woff2') format('woff2');
+    /* Add 'format' based on your font file format */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body, html {
     height: 100%;
 }
@@ -74,22 +82,25 @@ body, html {
     z-index: 1;
     background: none; /* Remove the background color */
     scale: 110%;
+    align-items: center; /* Add this line to center the content vertically */ 
 }
 .os-grid a{
     text-decoration: none;
 }
 
 .os-text {
+    font-family: 'windows95';
     text-align: center;
     transform: translateX(-.5vh);
     color: rgb(0 0 0);
     font-size: calc(.5vw + 1vh); /* Adjust the values based on your desired scaling */
-    text-shadow: 4px 2px 3px rgb(0 0 0 / 19%);
+    text-shadow: 4px 2px 3px rgb(0 0 0 / 2%);
 
 }
 
 .os a img {
     transition: backdrop-filter 0.3s ease-in-out;
+    place-self: center;
 }
 
 .os a:hover img {
