@@ -1,5 +1,5 @@
-normalSongNameArray=['makefun','powerlines','run'];
-SecretSongNameArray=['run','makefun']; // TO ADD SONGS ADD A NAME HERE
+normalSongNameArray=['makefun','thousand','jawless','2008'];
+SecretSongNameArray=['theEnd','run',]; // TO ADD SONGS ADD A NAME HERE
 
 let songHowlArray = [];
 let songNameArray=[];
@@ -88,6 +88,9 @@ let song6Visual = $('#song6');
 $('#song1 span').html(songNameArray[0]+'.mp3');
 $('#song2 span').html(songNameArray[1]+'.mp3');
 $('#song3 span').html(songNameArray[2]+'.mp3');
+$('#song4 span').html(songNameArray[3]+'.mp3');
+$('#song5 span').html(songNameArray[4]+'.mp3');
+$('#song6 span').html(songNameArray[5]+'.mp3');
 directory.append(secretContent);
 
 songOnDeck = song1;
