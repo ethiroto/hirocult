@@ -1,4 +1,4 @@
-normalSongNameArray=['makefun','thousand','jawless','2008'];
+normalSongNameArray=['makefun','thousand','jawless','2008','guppy'];
 SecretSongNameArray=['theEnd','run',]; // TO ADD SONGS ADD A NAME HERE
 
 let songHowlArray = [];
