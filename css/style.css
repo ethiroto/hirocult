@@ -76,12 +76,12 @@ body, html {
     display: grid;
     object-fit: contain;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10%; /* Adjust grid gap */
-    padding: 30% 30% 30% 15%; /* Adjust padding */
+    grid-gap: 20%; /* Adjust grid gap */
+    padding: 30% 30% 50% 25%; /* Adjust padding */
     position: absolute;
     z-index: 1;
     background: none; /* Remove the background color */
-    scale: 110%;
+    scale: 130%;
     align-items: center; /* Add this line to center the content vertically */ 
 }
 .os-grid a{
