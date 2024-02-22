@@ -56,3 +56,68 @@
     }
     
 }
+
+
+
+
+
+
+
+#shop-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: px solid #fff; /* Subtle border for a touch of detail */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    background-color: #9257f0; /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for the background seen through the popup */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    padding: 20px; /* Add some padding around the content */
+    box-shadow: 0 4px 6px rgba(0.6,0,0.6,0.7); /* Optional: soft shadow for more depth */
+    visibility: hidden;
+    z-index:999;
+}
+
+#shop-popup iframe{
+    height: 500px;
+    width:380px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Changed from 'end' to 'flex-end' for broader compatibility */
+    min-height: 40px; /* Set a minimum height for visibility */
+}
+
+.x-btn {
+    cursor: pointer;
+    font-size: 30px;
+    color: #AAA; /* Lighter color for the button for contrast */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    margin-right:10px;
+}
+
+.x-btn-container:hover .x-btn {
+    color: #FFF; /* Brighter color on hover for visibility */
+    transform: rotate(90deg); /* Adds a cool twist effect on hover */
+}
+
+.x-btn-container {
+    cursor: pointer;
+}
+
+
+.shop-header{
+    display: flex;
+    justify-content: center;
+    transform : translateY(-30px);
+    font-family:'sunflower';
+    color:#ffebcd;
+    
+    
+}

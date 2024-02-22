@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/popup.css">
     <link rel="icon" type="image/png" href="img/cat.png">
+    <link rel="stylesheet" href="css/window.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="js/shop.js" defer></script>
     <title>Hirocult</title>
 </head>
 <body>
@@ -50,11 +53,11 @@
                             <p class ="os-text">reach me</p>
                         </div>
                     </a>
-                    <a href="about.html">
-                        <div>
-                            <img src="img/question.png" alt="">
-                            <p class="os-text">what is this?</p>
-                        </div>
+                    <a>
+                    <div class="shop-item">
+                        <img src="img/gotsstick.jpg" alt="">
+                        <p class="os-text">Buy a Sticker!</p>
+                    </div>
                     </a>
                 </div>
                 <div class="popup-box" id="popupBox">
@@ -81,7 +84,24 @@
                 </div>
             </div>
         </div>  
+        <div class="window-container">
+        <div class="basic-window">
+            <div class="window-header">
+                <div class="name-icon">
+                    <img src="img/cat.png"alt="" class="corner-img header-item">
+                    <span class="directory-title header-item">Buy a sticker!</span>
+                </div>
+                <div class="window-controls">
+                    <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+                    <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+                    <div class="top-btn header-item close" style="background-image: url('icons/x.png');"></div>
+                </div>
+            </div>
+            <iframe src="buybtn.html" frameborder="0"></iframe>    
+        </div>
     </div>
+    </div>
+    
     <script src="js/popup.js"></script>
 </body>
 </html>
