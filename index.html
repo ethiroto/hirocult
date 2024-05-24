@@ -5,103 +5,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="icon" type="image/png" href="img/cat.png">
     <link rel="stylesheet" href="css/window.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <script src="js/shop.js" defer></script>
+    <link rel="stylesheet" href="css/specific-window.css" id="window-specific">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="icon" type="image/png" href="img/cat.png">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.0.js"
+			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+			  crossorigin="anonymous" defer></script>
+    <script
+			  src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+			  integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+			  crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+              
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+    <script src="js/colorpick.js" defer></script>
+    <script src="js/window-control.js" defer></script>
+    <script src="js/iconLink.js" defer></script>
+    <script src="js/dispatch.js" defer></script>
+    <script src="js/mobileSupport.js" defer></script>
+    <script src="js/drag.js" defer></script>
+    <script src="js/appExpand.js" defer></script>
     <title>Hirocult</title>
 </head>
 <body>
-    <div class="container">
-        <div class="page-container-top">
-            <div class="title">
-                <img src="./img/occult5.gif" alt="hirocult">
-            </div>
+    <div class="desktop-container">
+        <div class="desktop-item" id="unreleased-music-icon">
+            <img class="music-folder" src="img/unreleased_music.png" alt="">
+            Demos (Unreleased Music)
         </div>
-        <div class="page-container-bot">
-            <div class="os">
-                <img src="img/cult-os3.png" alt="">
-                <div class="os-grid">
-                    <a href="https://ffm.to/hiro" target="blank">
-                        <div>
-                            <img src="img/hirook.png" alt="">
-                            <p class="os-text">PRESAVE HIRO IS OK</p>
-                        </div>
-                    </a>
-                    <a href="https://open.spotify.com/track/2wTjej5JHkrq8sLcwbsJE1?si=e4784a3ef1774ef8" target="blank">
-                        <div>
-                            <img src="img/cd.png" alt="">
-                            <p class="os-text">SPOTIFY</p>
-                        </div>
-                    </a>
-                    <a href="music/index.html">
-                        <div>
-                            <img src="img/unreleased.png" alt="">
-                            <p class="os-text">UNRELEASED MUSIC</p>
-                        </div>
-                    </a>
-                    <a href="https://youtu.be/BXYjJ5zIrAQ" target="blank">
-                        <div>
-                            <img src="img/wincomp69.png" alt="">
-                            <p class="os-text">AUTOMATIC MUSIC VIDEO</p>
-                        </div>
-                    </a>
-                    <a>
-                        <div id="clickableImage">
-                            <img src="img/hands.png" alt="Image">
-                            <p class ="os-text">reach me</p>
-                        </div>
-                    </a>
-                    <a>
-                    <div class="shop-item">
-                        <img src="img/gotsstick.jpg" alt="">
-                        <p class="os-text">Buy a Sticker!</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="popup-box" id="popupBox">
-                    <span class="close-btn" id="closeBtn">&times;</span>
-                    <div class="popup-content">
-                        <!-- Add your content here -->
-                        <h3 class="pop-title">Reach me</h3>
-                        <a href="https://www.instagram.com/hiroto__kei" target="blank">
-                            <img src="img/painting.png" alt="woops">
-                            insta<br>
-                            <br>
-                        </a>
-                        <img src="img/comp.png" alt="woops">
-                        hiro@hirocult.net <br><br>
-                        
-                        <p>Discord: hiroto kei#0989</p><br>
-
-                        <div class="pop-desc">
-                            get in touch to work or just say hi<br><br>
-                            help wanted: filmmakers, photographers, artists, web/game designers.
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>  
-        <div class="window-container">
-        <div class="basic-window">
-            <div class="window-header">
-                <div class="name-icon">
-                    <img src="img/cat.png"alt="" class="corner-img header-item">
-                    <span class="directory-title header-item">Buy a sticker!</span>
-                </div>
-                <div class="window-controls">
-                    <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
-                    <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
-                    <div class="top-btn header-item close" style="background-image: url('icons/x.png');"></div>
-                </div>
-            </div>
-            <iframe src="buybtn.html" frameborder="0"></iframe>    
+        <div class="desktop-item" id="video-folder-icon">
+            <img src="img/folder.png" alt="">
+            Videos
+        </div>
+        <div class="desktop-item" id="about-icon">
+            <img src="img/3d.png" alt="">
+            ???
+        </div>
+        <div class="desktop-item" id="secret-music-icon">
+            <img src="img/secret-music.png" alt="">
+            Secret Music
+        </div>
+        <div class="desktop-item" id="shop-icon">
+            <img src="img/shop.png" alt="">
+            Shop
         </div>
     </div>
+    <div class="bottom-bar">
+        <!-- Content for the bottom bar goes here -->
+        <div class="bottom-bar-content">
+            <btn class="bottom-bar-item" id="music-player-icon">
+                <img src="img/musicplayer.png" alt="">
+                Music Player</btn>
+            <div class="bottom-bar-item" id="videoPlayer-icon">
+                <img src="img/camcorder.png" alt="">
+                Video Player
+            </div>
+            <btn class="bottom-bar-item" id="alert-bulletin-icon">
+                <img src="img/alert.png" alt="">
+                Alert Bulletin
+            </btn>
+        </div>
+        <div class="end-bar">
+            <div class="end-bar-item" id="occult-gif">
+                <img src="img/occult5.gif" draggable="false" alt="">
+            </div> 
+            <div class="end-bar-item" id="color-picker"><img src="img/blocks-window.png" draggable="false" alt="">
+                <div id="color-picker-popup">
+                    <div class="color-option" id="color-option-1" style="background-color: #FF0000;"></div> <!-- Red -->
+                    <div class="color-option" id="color-option-2" style="background-color: #0000FF;"></div> <!-- Blue -->
+                    <div class="color-option" id="color-option-3" style="background-color: #00FF00;"></div> <!-- Green -->
+                    <div class="color-option" id="color-option-4"style="background-color: #FFFF00;"></div> <!-- Yellow -->
+                </div>
+            </div>
+            <div class= "end-bar-item" id="clock">11:11 PM</div>
+        </div>
+
+        <div class="app-expand">
+            <btn class="bottom-bar-item" id="music-player-icon">
+                <img src="img/musicplayer.png" alt="">
+                Music Player
+            </btn>
+            <div class="bottom-bar-item" id="videoPlayer-icon">
+                <img src="img/camcorder.png" alt="">
+                Video Player
+            </div>
+            <btn class="bottom-bar-item" id="alert-bulletin-icon">
+                <img src="img/alert.png" alt="">
+                Alert Bulletin
+            </btn>
+        </div>
     </div>
-    
-    <script src="js/popup.js"></script>
+
+
+
+<div class="basic-window" id="video-player">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/camcorder.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Video Player</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="video-player-iframe" src="video-player/index.html"  frameborder="0"></iframe>    
+</div>
+
+<div class="basic-window" id="music-directory-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/unreleased_music.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Music I Won't Release</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="music-directory-iframe" src="music-directory/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+
+<div class="basic-window" id="secret-music-directory-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/secret-music.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Secret Music</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="music-directory-iframe" src="secret-music-directory/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+<div class ="basic-window" id="music-player-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/musicplayer.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Music Player</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="music-player-iframe" src="music-player/index.html" frameborder="0"></iframe>
+</div>
+
+<div class="basic-window" id="video-directory-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/folder.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Videos</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="video-directory-iframe" src="video-directory/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+
+<div class="basic-window" id="bulletin-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/alert.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Alert Bulletin</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="bulletin-iframe" src="bulletin/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+
+<div class="basic-window" id="about-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/3d.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">?????</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="about-iframe" src="about/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+<div class="basic-window" id="shop-window">
+    <div class="window-header">
+        <div class="window-drag-area"></div>
+        <div class="name-icon">
+            <img src="img/shop.png"alt="" class="corner-img header-item">
+            <span class="directory-title header-item">Shop</span>
+        </div>
+        <div class="window-controls">
+            <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
+            <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
+            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+        </div>
+    </div>
+    <iframe class="window-content" id="shop-iframe" src="shop/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" frameborder="0"></iframe>    
+</div>
+
+
+
 </body>
 </html>
+
+
+
+<!--MUSIC WINDOW-->

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Windows95';
+    src: url('../fonts/w95fa.woff2') format('woff2');
+    /* Add 'format' based on your font file format */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    background-color:#eac1ff;
+    font-family: 'windows95', sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    #social-container{
+        font-size:17px;
+    }
+    p{
+        font-size: 20px;
+    }
+    #about-txt{
+        font-size:20px;
+    }
+}
+
+#social-container{
+    padding-top:40px;
+}
+.social{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:flex-start;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease; /* Smooth transition for background color */
+    cursor:pointer;
+    width:max-content;
+}
+.social:hover {
+    background-color: #d7d7fa; /* Classic blue background on hover */
+    color: #FFFFFF; /* White text color on hover */
+    border-color: #eeeeff; /* Matching border color */
+}
+
+/* Optional: Active (click) effect for an even more tactile feedback */
+.social:active {
+    background-color: #00008B; /* Darker blue on click */
+}
+
+.social img{
+    margin-right:3px;
+    width:20px;
+    height:auto;
+}
+#email img{
+    width:17px;
+    height: auto;
+}
+
+
+@keyframes jiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+#about-txt{
+    font-size:16.5px;
+}
+p{
+    font-size:16.5px;
+
+}
+#about-txt h1 span {
+    display: inline-block;
+    animation-name: jiggle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#about-txt h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#about-txt h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+}
+
+#about-txt h1 span:nth-child(3) {
+    animation-delay: 0.3s;
+    animation-duration: 0.7s;
+}
+
+#about-txt h1 span:nth-child(4) {
+    animation-delay: 0.4s;
+    animation-duration: 0.8s;
+}
+
+/* Rule to pause animation when hovering over any part of the h1 */
+#about-txt h1:hover span {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+#about-txt h1{
+    width:fit-content;
+}
+
+
+

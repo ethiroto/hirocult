@@ -1,0 +1,38 @@
+TO DO:
+-Load time for music
+-window pop up animation?
+-Journal window
+-Journal/Gallery
+
+COMPLETE:
+-smoother drag.js 
+-Announcment window
+-hirocult logo?
+-About/Socials
+-FIX CLOCK X
+-Fix Drag for comp X
+-where do windows pop up? X
+-background? 
+    -color picker
+-Refactor music Script 
+-add secret music (make this a seperate icon/window)
+-Iconlink secret music
+-Window Placement for Desktop
+-Update Content
+-add more polish to secret music (? btn etc)
+-random color pick for background
+-Mobile windows open different ones
+-fatter mobile window buttons
+-Fix window arrangements (mobile)
+-Fix video directory
+
+
+IDeas:
+-maybe have "alert" glitch into alter a little bit or something lol.
+
+
+For mobile:
+-Lock the screen dimensions, so no flexibility,
+-Adjust the window sizes
+-Figure out window popup
+-Fix the x buttons

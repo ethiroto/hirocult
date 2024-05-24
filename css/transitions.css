@@ -1,0 +1,100 @@
+/* BOTTOM BAR TRANSITIONS*/
+.bottom-bar-item{
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions for background and border color */
+}
+
+.bottom-bar-item:hover {
+    background-image: repeating-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: 100% 4px;
+    background-color: #add8e6; /* Light blue background to simulate a retro CRT screen effect */
+    border-color: #00ffff #008080 #008080 #00ffff; /* Neon-like cyan border colors for a glowing effect */
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); /* Soft glow effect around the item */
+}
+
+.bottom-bar-item:active {
+    border-style: inset; /* Invert the 3D border effect to appear pressed */
+    background-color: #d0d0d0; /* Slightly darker background to show it's being pressed */
+}
+
+
+
+/* DESKTOP ICON TRANSITIONS*/
+.desktop-item {
+    /* ... existing styles ... */
+    transition: background-color 0.15s, border-color 0.15s; /* Smooth transitions for background and border color */
+    background-color: transparent; /* Default transparent background */
+    border: 2px solid transparent; /* Default transparent border */
+}
+
+.desktop-item:hover {
+    background-color: #ccecf0; /* Light blue color on hover */
+    border-color: #b4ecfc; /* Darker light blue border on hover */
+}
+
+
+
+/* TOP BTNS */
+.top-btn:hover {
+    background-image: repeating-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: 100% 10.5px;
+ /* Light blue background to simulate a retro CRT screen effect */
+    border-color: #fcfcfc #008080 #008080 #00ffff; /* Neon-like cyan border colors for a glowing effect */
+    box-shadow: 0 0 1px rgb(138, 251, 251); /* Soft glow effect around the item */
+}
+
+.top-btn:active {
+    border-style: inset; /* Invert the 3D border effect to appear pressed */
+    background-color: #98c3ff; /* Slightly darker background to show it's being pressed */
+}
+
+
+
+.color-option{
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions for background and border color */
+}
+
+.color-option:hover {
+    background-image: repeating-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    background-size: 100% 4px;
+    background-color: #add8e6; /* Light blue background to simulate a retro CRT screen effect */
+    border-color: #00ffff #008080 #008080 #00ffff; /* Neon-like cyan border colors for a glowing effect */
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); /* Soft glow effect around the item */
+}
+
+.color-option:active {
+    border-style: inset; /* Invert the 3D border effect to appear pressed */
+    background-color: #d0d0d0; /* Slightly darker background to show it's being pressed */
+}
+
+
+#color-picker img {
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for transform and shadow */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+#color-picker img:hover {
+    transform: scale(1.02); /* Scale up the box on hover */
+}
+
+#color-picker img:active {
+    transform: scale(0.9); /* Scale down the box when active/clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow more focused for pressed effect */
+}

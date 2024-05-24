@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: 'Windows95';
     src: url('../fonts/w95fa.woff2') format('woff2');
@@ -11,152 +5,214 @@
     font-weight: normal;
     font-style: normal;
   }
-
-body, html {
-    height: 100%;
+  html, body {
+    overflow: hidden; /* Prevent scrolling in both directions */
+    position: fixed; /* Prevent scrolling and keep the viewport stationary */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+body{
+    background-color: #bebee7;
+    
 }
-
-.container {
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    height: 100%;
-}
-
-.page-container-top {
+  
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px; /* Adjust to match the height in the image */
+    background-color: #c0c0c0; /* Grey background similar to the one in the image */
     display: flex;
-    justify-content: center;
-    align-self:start;
-    align-items: flex-start;
-}
-
-.page-container-bot {
-    display: flex;
-    justify-content: center;
-    align-self: start;
-    align-items: flex-start;
-}
-
-.title {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 25%;
-    margin-bottom: 1%;
+    justify-content: space-between;
+    padding: 0 10px; /* Side padding for content */
+    border-top: 1px solid rgb(149, 147, 147)cfc; /* Solid top border */
+    box-shadow: inset 0 1px 0 #ffffff; /* Top inner shadow for a beveled effect */
+    z-index: 3000;
 }
 
-.title img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin-top: 3%;
-    margin-bottom: 8%;
-    z-index:-1;
-}
-
-.os{
+.bottom-bar-content {
     display: flex;
-    justify-content: center;
-    align-self: start;
-    height: 100%;
-    transform: translateY(-18vh); 
-    position: relative;
-    margin-top: .6vh;
-}
-.os img{
-    width: 90%;
-    height: 100%;
-    object-fit:contain;
-    position:relative;
-    z-index: -1;
+    flex-direction: row;
+    justify-content: flex-start;
+    font: 16px 'Windows95', sans-serif;
 }
 
-.os-grid{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    object-fit: contain;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20%; /* Adjust grid gap */
-    padding: 30% 30% 50% 25%; /* Adjust padding */
-    position: absolute;
-    z-index: 1;
-    background: none; /* Remove the background color */
-    scale: 130%;
-    align-items: center; /* Add this line to center the content vertically */ 
-}
-.os-grid a{
-    text-decoration: none;
+.bottom-bar-item {
+    display: flex;
+    margin-right: 3px;
+    padding: 0px 3px; /* Padding inside each item */
+    border-width: 2px; /* Width of the border */
+    border-style: outset; /* 3D border effect */
+    border-color: #ffffff #808080 #808080 #ffffff; /* Light color on top and left, dark on bottom and right */
+    text-align: center; /* Center the text inside the item */
+    user-select: none; /* Prevent text selection */
+    cursor: pointer; /* Change mouse cursor to indicate it's clickable */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align content to the left */
+    width: 160px; /* Fixed width */
 }
 
-.os-text {
-    font-family: 'windows95';
-    text-align: center;
-    transform: translateX(-.5vh);
-    color: rgb(0 0 0);
-    font-size: calc(.5vw + 1vh); /* Adjust the values based on your desired scaling */
-    text-shadow: 4px 2px 3px rgb(0 0 0 / 2%);
 
+.bottom-bar-item img{
+    max-width: 30px;
+    height: auto;
+    padding-right:2px;
 }
 
-.os a img {
-    transition: backdrop-filter 0.3s ease-in-out;
-    place-self: center;
+.app-expand .bottom-bar-item{
+    display: flex;
+    margin-right: 3px;
+    margin-top:2px;
+    padding: 0px 3px; /* Padding inside each item */
+    border-width: 2px; /* Width of the border */
+    border-style: outset; /* 3D border effect */
+    background-color: #c0c0c0;
+    border-color: #ffffff #808080 #808080 #ffffff; /* Light color on top and left, dark on bottom and right */
+    text-align: center; /* Center the text inside the item */
+    user-select: none; /* Prevent text selection */
+    cursor: pointer; /* Change mouse cursor to indicate it's clickable */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align content to the left */
+    width: 160px; /* Fixed width */
 }
 
-.os a:hover img {
-    transform: scale(1.1); /* Scales the image up slightly */
+.app-expand-item img{
+    max-width: 30px;
+    height: auto;
+}
+
+.app-expand{
+    position:absolute;
+    bottom:43px;
+    font-family: 'Windows95', sans-serif;
+}
+
+#clock {
+    background-color: #000080; /* Navy blue background */
+    color: white;
+    font-family: 'Windows95', sans-serif;
+    text-shadow: 1px 1px 0px #000; /* Optional: gives a retro "3D" effect */
+}
+
+
+.desktop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 95vh;   
+    padding-top: 25px;
+    padding-left: 30px;
   }
-.os a:hover .os-text {
-    transform: scale(1.1); /* Scales the text up slightly */
+
+.desktop-item {
+    width:80px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    font: 16px 'Windows95', sans-serif;
+    cursor: pointer;
+    margin-bottom:30px;
   }
 
+.desktop-item img{
+    width: 50px;
+    height: auto;
+    margin-bottom:3px;
+}
 
-
-@media (max-width: 768px) {
-    .title{
-    width: 40%
-        
-    }
-    .home span{
-    right: 15%;
-    }
+.end-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.end-bar-item{
+    padding: 5px 10px;
     
 }
 
+#occult-gif img{
+    height:30px;
+    width:auto;
+    position: relative;
+    left:22px;
+}
+#color-picker{
+    margin-top: 3px;
+    cursor: pointer;
+}
 
-.about-box {
-    width: 70%;
-    height: 50%;
+
+#color-picker-popup {
+    width: 15px; /* Adjust the size as needed */
+    height: 90px;
+    bottom: 45px; /* Position it above the bottom of the viewport */
+    position: fixed;
+    margin-left:8px;
+    display: none;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color-option {
+    width: 100%; /* Adjust based on the size of the popup */
+    height: 16px; /* Making the color options squares */
+    border-width: 2px; /* Width of the border */
+    border-style: outset; /* 3D border effect */
+    border-color: #ffffff #808080 #808080 #ffffff;
+    cursor: pointer; /* Indicates you can interact with the colors */
+}
+
+#occult-gif-container{
     position: absolute;
-    top: 52%; /* Adjust these values to position the text box */
+    z-index: -2;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(255 255 255); /* Semi-transparent white background */
-    border: 2px solid #000;
-    padding: 1rem; /* Add padding around the text */
-    border-radius: 2px; /* Rounded corners */
-    color: #000; /* Text color */
-    font-size: calc(1.2vw + .7vh);
-    z-index: 2; /* Ensure the text box appears above the OS image */
-}
-.about-box h1{
-    text-align: center;
 }
 
 
-.home img{
-    position: absolute;
-    bottom: -25%;
-    right: 11%;
-    z-index:10;
-    width: 10%;
+@media (min-width: 600px) {
+    .app-expand {
+        display: none;
+    }
 }
-.home span{
-    position: absolute;
-    z-index:11;
-    bottom: 19%;
-    right: 13%;
-    color:cornflowerblue;
-    font-size: calc(1vw + .4vh);
 
+@media (max-width: 453px){
+    #clock{
+        font-size: 8px;
+    }
+}
+
+
+
+
+
+.window-drag-area {
+    position: absolute; /* Positions the drag area absolutely within the window-header */
+    left: 0; /* Starts from the left edge */
+    top: 0; /* Starts from the top edge */
+    right: 70px;
+    bottom: 0; /* Extends to the bottom of the container */
+    height:37px;
+}
+
+
+#music-player-icon img{
+    width:16%;
+    height:auto;
+}
+
+
+@media only screen and (max-width: 410px) {
+    #clock {
+        display: none;
+        width:0px;
+    }
 }

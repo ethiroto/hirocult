@@ -1,0 +1,187 @@
+/* iframe is to adjust window size, window is to adjust position*/
+
+body.desktop { 
+
+#test-iframe{
+    width: 575px;
+    height: 330px;
+}
+
+#video-player-iframe{
+    width: 575px;
+    height: 330px;
+}
+#video-player{
+    bottom:30vh ;
+    left: 20vw;
+}
+
+#music-directory-iframe{
+    width: 470px;
+    height: 330px;
+}
+#music-directory-window{
+    top: 5vw;
+    left: 10vw;
+}
+#secret-music-directory-window{
+    top: 30vh;
+    left: 40vw;
+}
+#secret-music-directory-iframe{
+    width: 470px;
+    height: 330px;
+}
+
+
+
+#music-player-iframe{
+    width: 400px;
+    height: 120px;
+}
+#music-player-window{
+    top: 10vh;
+    right: 9vw;
+}
+
+#video-directory-iframe{
+    width: 350px;
+    height: 250px;
+}
+#video-directory-window{
+    top: 50vh;
+    right: 10vw;
+}
+
+#bulletin-iframe{
+    width: 360px;
+    height: 200px;
+}
+#bulletin-window{
+    top: 40vh;
+    right: 20vh;
+}
+
+#about-iframe{
+    width: 400px;
+    height: 280px;
+}
+#about-window{
+    top: 20vh;
+    left: 20vw;
+}
+
+
+#shop-iframe{
+    width: 310px;
+    height: 450px;
+}
+#shop-window{
+    top: 20vh;
+    right: 20vw;
+}
+}
+
+
+body.mobile { /* iframe is to adjust window size, window is to adjust position*/
+
+    #test-iframe{
+        width: 575px;
+        height: 330px;
+    }
+    
+    #video-player-iframe{
+        width: 575px;
+        height: 330px;
+    }
+    
+    #video-player {
+        bottom:20vh;
+        right:10vw;
+    
+    }
+    
+    #music-directory-iframe{
+        width: 470px;
+        height: 330px;
+    }
+    
+    #music-directory-window{
+        bottom: 10vh;
+        right:70px;
+    }
+    
+    #secret-music-directory-iframe{
+        width: 470px;
+        height: 330px;
+    }
+    
+    #secret-music-directory-window{
+        top: 30vh;
+        right: 16vw;
+    }
+    
+    
+    #music-player-iframe{
+        width: 400px;
+        height: 120px;
+    }
+    #music-player-window{
+        top: 30vh;
+        right:5vw;
+    }
+    
+    #video-directory-iframe{
+        width: 350px;
+        height: 240px;
+    }
+    #video-directory-window{
+        top: 20vw;
+        left: 20vw;
+    }
+    
+    #bulletin-iframe{
+        width: 360px;
+        height: 200px;
+    }
+    #bulletin-window{
+        top: 0vw;
+        right: 5vw;
+    }
+    
+    #about-iframe{
+        width: 400px;
+        height: 280px;
+    }
+    #about-window{
+        bottom: 30vw;
+        right: 10vw;
+    }
+
+    #shop-iframe{
+        width: 315px;
+        height: 500px;
+    }
+    @media (max-width: 600px) {
+        #shop-iframe {
+            height:550px;
+        }
+    }
+    @media (max-width: 400px) {
+        #shop-iframe {
+            height:630px;
+        }
+    }
+    #shop-window{
+        top: 10vh;
+        right: 30vw;
+    }
+
+    .close-enhancer{
+        width:50px;
+        height:40px;
+        top:-20px;
+        left:-15px;
+        position:relative;
+    }
+    }

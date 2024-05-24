@@ -1,47 +1,40 @@
-.window-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%; /* Position the top edge of the element at the center of the viewport */
-    left: 50%; /* Position the left edge of the element at the center of the viewport */
-    transform: translate(-50%, -50%); 
-}
 .basic-window {
     background-color: #c0c0c0; /* Gray background */
     border: 1px solid #000000; /* Black border */
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.688); /* Adds subtle drop shadow */
-    position: fixed;
-    z-index: 999;
-    width: 400px;
-    height: 500px;
-    z-index: 999;
-    visibility: hidden;
-}
-.basic-window iframe{
-        height: 500px;
-        width:390px;
-        padding-left: 45px;
-        padding-top: 10px;
+    position: absolute;
 }
 
+@media (max-width: 600px) {
+    .window-content {
+        zoom:.7;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .window-content {
+        zoom:.6;
+    }
+}
+@media (max-width: 400px) {
+    .window-content {
+        zoom:.5;
+    }
+}
 .window-header {
     background: linear-gradient(to right, navy, #1084d0); /* Gradient */
     display: flex;
     justify-content:space-between;
     padding: 5px;
     align-items: center;
-    height:30px;
 }
 
 .name-icon{
     display: flex;
-    align-items: center;
     margin: 0px 5px;
-    position: relative;
-    z-index: 1;
 }
 .window-controls{
     display: flex;
@@ -73,21 +66,28 @@
     background-position: center;
     background-size: contain;
     background-color: #c0c0c0;
-    box-shadow: inset -2px -2px 2px rgba(0,0,0,0.2), inset 2px 2px 2px rgba(255,255,255,0.2);
-    border: 1px solid #000;
+    border-width: 2px; /* Width of the border */
+    border-style: outset; /* 3D border effect */
+    border-color: #ffffff #808080 #808080 #ffffff;
     box-sizing: border-box;
     cursor:pointer;
 }
 
-.corner-img {
-    width: 20px !important;
-    height: 20px !important;
-    background-color: #000000;
-    padding: 0px;
-    position: relative;
-    z-index: 2;
+.minimize{
+    background-color:#f0f6c2;
+}
+.maximize{
+    background-color:#abfcb8;
+}
+.close{
+    background-color:#fd857b;
 }
 
+.corner-img {
+    width: 17px;
+    height: 17px;
+    padding: 0px;
+}
 
 
 .window-content {

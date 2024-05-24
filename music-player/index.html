@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" defer></script>
+    <script src="musicPlayer.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="song-name"></div>
+        <div class="player-timeline">
+            <input type="range" id="song-timeline" min="0" max="100" value="0" class="timeline-slider">
+            <div class="song-time">00:00 / 00:00</div>
+        </div>
+        <div class="player-controls">
+            <div class="btn" style="background-image: url('icons/backskip.png');" id="backskip"></div>
+            <div id="play">
+                <div class="btn" style="background-image: url('icons/play.png');"></div>
+            </div>
+        <div class="btn" style="background-image: url('icons/forwardskip.png');" id="forwardskip"></div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Windows95';
+    src: url('../fonts/w95fa.woff2') format('woff2');
+    /* Add 'format' based on your font file format */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    background-color: #ecbde6; /* background */
+    font-family: 'Windows95', sans-serif; /* Fallback to sans-serif if custom font doesn't load */
+}
+
+.bulletin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    
+}
+.alert-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.alert-container img{
+    width: 150px;
+    margin:10px;
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+}
+

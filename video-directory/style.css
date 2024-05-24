@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Windows95';
+    src: url('../fonts/w95fa.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fad6ff;
+    min-height: 100vh; /* Ensure content fills the viewport */
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    font-family: 'Windows95', sans-serif; /* Set font for the entire body */
+    font-size:12px;
+    overflow:hidden;
+    
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size:17px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    body{
+        font-size:17px;
+    }
+
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* This will create a 5-column grid */
+    grid-gap: 4px; /* This sets the gap between grid items */
+    align-content: start;
+    padding:15px;
+    gap: 15px; 
+    text-wrap:wrap;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 0px;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+    background-color: transparent;
+    width:80px;
+    text-wrap:wrap;
+}
+
+.video:hover {
+    background-color: #ccecf0;
+    border-color: #b4ecfc;
+}
+
+.video img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Add space between image and text */
+}
