@@ -19,11 +19,6 @@
     animation: fadeAway 1s forwards;
 }
 
-@media (max-width: 600px) {
-    body{
-        font-size:20px;
-    }
-}
 
 @keyframes fadeAway {
     0% {
@@ -49,22 +44,26 @@
 }
 
 .directory-content {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* This will create a 5-column grid */
-    grid-gap: 4px; /* This sets the gap between grid items */
+    display: flex;
+    flex-direction: row;
+    grid-gap: 4px;
     align-content: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline:20px;
+    padding-top: 25px;
 }
+
+
 
 .dir-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;    
-    margin-top: 40%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    padding:10px;
+    margin-bottom:25px;
 }
 
 .dir-item:hover {
@@ -82,11 +81,16 @@
 }
 
 .dir-item span{
-    font-size: 14px;
     font-weight: bold;
     padding-right: 5px;
-    font-family: 'Windows95', sans-serif; /* Fallback to sans-serif if custom font doesn't load */
+    font-family: 'Windows95', sans-serif;
+    text-wrap: wrap;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+    white-space: normal;
+    width: 120px;
 }
+
 
 
 .password-lock{

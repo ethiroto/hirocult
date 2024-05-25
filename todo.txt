@@ -25,6 +25,8 @@ COMPLETE:
 -fatter mobile window buttons
 -Fix window arrangements (mobile)
 -Fix video directory
+-add a cool loading screen
+-safari adapt/fix
 
 
 IDeas:

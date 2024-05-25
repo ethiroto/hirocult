@@ -17,8 +17,8 @@ body.desktop {
 }
 
 #music-directory-iframe{
-    width: 470px;
-    height: 330px;
+    width: 490px;
+    height: 350px;
 }
 #music-directory-window{
     top: 5vw;
@@ -82,7 +82,6 @@ body.desktop {
 }
 }
 
-
 body.mobile { /* iframe is to adjust window size, window is to adjust position*/
 
     #test-iframe{
@@ -102,8 +101,8 @@ body.mobile { /* iframe is to adjust window size, window is to adjust position*/
     }
     
     #music-directory-iframe{
-        width: 470px;
-        height: 330px;
+        width: 520px;
+        height: 350px;
     }
     
     #music-directory-window{
@@ -141,7 +140,7 @@ body.mobile { /* iframe is to adjust window size, window is to adjust position*/
     }
     
     #bulletin-iframe{
-        width: 360px;
+        width: 390px;
         height: 200px;
     }
     #bulletin-window{
@@ -184,4 +183,4 @@ body.mobile { /* iframe is to adjust window size, window is to adjust position*/
         left:-15px;
         position:relative;
     }
-    }
+    } 

@@ -12,21 +12,28 @@ body{
 
 
 .directory-content {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* This will create a 5-column grid */
-    grid-gap: 4px; /* This sets the gap between grid items */
+    display: flex;
+    flex-direction: row;
+    grid-gap: 4px;
     align-content: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 17px;
 }
 
 .dir-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;    
-    margin-top: 40%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    padding: 10px;
+    width:83px;
+    flex-shrink: 0; 
+    flex-basis: 83px; /* Add this line */
+    padding-bottom: 20px;
+    padding-top:15px;
 }
 
 .dir-item:hover {
@@ -44,8 +51,12 @@ body{
 }
 
 .dir-item span{
-    font-size: 14px;
     font-weight: bold;
     padding-right: 5px;
-    font-family: 'Windows95', sans-serif; /* Fallback to sans-serif if custom font doesn't load */
+    font-family: 'Windows95', sans-serif;
+    text-wrap: wrap;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal;
+    width: 100px;
 }
