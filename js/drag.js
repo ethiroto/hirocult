@@ -2,6 +2,8 @@ $(function() {
     // Create Draggable instances for each .basic-window
     $(".basic-window").each(function() {
         var windowElement = this; // The specific .basic-window element
+
+
         Draggable.create(windowElement, {
             type: "x,y",
             trigger: $(windowElement).find(".window-drag-area")[0], // Use only the .window-header within this .basic-window as the trigger
@@ -17,5 +19,11 @@ $(function() {
                 $(windowElement).css('cursor', ''); // Reset cursor to initial state when drag ends
             }
         });
+        //THIS IS SO IF THE BORDER GETS CLICKED (or anywhere on the window, it jumps to the top)
+        $(windowElement).on('click', function() {
+            highestZIndex += 1;
+            $(this).css('z-index', highestZIndex);
+        });
     });
 });
+

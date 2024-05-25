@@ -55,6 +55,7 @@ $(document).ready(function() {
         }else{
             $('#'+application.window).removeClass('minimized');
         }
+
     };
 
     function toggleWindow(appObj){
@@ -171,3 +172,24 @@ $(window).on('load', function(){
     console.log('loaded!');
     applyZoomBasedOnWindowSize();
 });
+
+
+
+//THIS MAKES IT SO IF ANYWHERE IN IFRAME IS CLICKED, THE WINDOW PROPAGATES TO THE TOP
+for (let i in apps) {
+    let application = apps[i];
+    let iframe = $('#' + application.window).find('.window-content');
+
+    iframe.on('load', function() {
+        // Access the iframe's content
+        var iframeDoc = iframe[0].contentDocument || iframe[0].contentWindow.document;
+
+        // Add a click event listener to the iframe's body
+        $(iframeDoc).on('click', function() {
+            highestZIndex++;
+            $('#' + application.window).css('z-index', highestZIndex);
+            
+        });
+    });
+}
+

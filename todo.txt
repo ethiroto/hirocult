@@ -1,4 +1,5 @@
 TO DO:
+-limit window to not go past bottom bar or top
 -Load time for music
 -window pop up animation?
 -Journal window
