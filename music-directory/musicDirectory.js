@@ -4,7 +4,6 @@ var songFiles = ['Left-arm-missing','sugar','tears','half-awake','mp3','pothol',
 
 //This sends it to localStorage as a JSON string of the array (parse it in the musicPlayer Script)
 localStorage.setItem('songFiles', JSON.stringify(songFiles));
-
 function siteWork(songArray) {
     let directory = $('.directory-content');
     // Append song divs to the directory
@@ -38,3 +37,5 @@ function createClickHandler(songNumber, songName) {
 
 siteWork(songFiles);
 
+
+$('.directory-content').append('<div class="dir-item"><a href="https://open.spotify.com/track/0ioYh442Ruw6iYc1j9vWpJ?si=8105c6dd4b834b0d" target="blank"class="alert-container"><img src="../img/folder.png" alt=""><span>Released Music</span></div></a>');

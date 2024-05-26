@@ -16,9 +16,8 @@ body{
     flex-direction: row;
     grid-gap: 4px;
     align-content: start;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
-    padding-inline: 17px;
 }
 
 .dir-item {
@@ -34,6 +33,13 @@ body{
     flex-basis: 83px; /* Add this line */
     padding-bottom: 20px;
     padding-top:15px;
+    margin-left:2%;
+}
+
+@media (max-width:400px) {
+    .dir-item {
+        margin-left:3%;
+    }
 }
 
 .dir-item:hover {
@@ -59,4 +65,16 @@ body{
     overflow-wrap: break-word; 
     white-space: normal;
     width: 100px;
+}
+
+
+a {
+    color: inherit; /* Inherits the color of the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Optionally, you can also define a hover state */
+a:hover {
+    color: inherit; /* Keeps the color the same on hover */
+    text-decoration: none; /* Keeps the underline removed on hover */
 }
