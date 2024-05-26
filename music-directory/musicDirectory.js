@@ -38,4 +38,4 @@ function createClickHandler(songNumber, songName) {
 siteWork(songFiles);
 
 
-$('.directory-content').append('<div class="dir-item"><a href="https://open.spotify.com/track/0ioYh442Ruw6iYc1j9vWpJ?si=8105c6dd4b834b0d" target="blank"class="alert-container"><img src="../img/folder.png" alt=""><span>Released Music</span></div></a>');
+$('.directory-content').append('<div class="dir-item"><a href="https://open.spotify.com/track/0ioYh442Ruw6iYc1j9vWpJ?si=8105c6dd4b834b0d" target="_blank"class="alert-container"><img src="../img/folder.png" alt=""><span>Released Music</span></div></a>');
