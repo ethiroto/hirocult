@@ -37,5 +37,30 @@ function createClickHandler(songNumber, songName) {
 
 siteWork(songFiles);
 
+/*
+$('.directory-content').append('<div class="dir-item"><a href="https://open.spotify.com/track/0ioYh442Ruw6iYc1j9vWpJ?si=8105c6dd4b834b0d" target="_blank"class="alert-container" id="released-music-folder"><img src="../img/folder.png" alt=""><span>Released Music</span></div></a>');
 
-$('.directory-content').append('<div class="dir-item"><a href="https://open.spotify.com/track/0ioYh442Ruw6iYc1j9vWpJ?si=8105c6dd4b834b0d" target="_blank"class="alert-container"><img src="../img/folder.png" alt=""><span>Released Music</span></div></a>');
+
+
+$(document).ready(function() {
+    function applyTargetBlank() {
+      if ($(window).width() > 768) { // Change the width as needed
+        $('#released-music-folder').attr('target', '_blank');
+      } else {
+        $('#released-music-folder').on('click',function(){
+            parent.location.href = 'https://open.spotify.com/track/7yaguJ94pkJ56uGBEgM7wJ?si=85b17335ddf74689';
+        })
+        $('#released-music-folder').removeAttr('target');
+      }
+    }
+
+    // Apply on page load
+    applyTargetBlank();
+
+    // Apply on window resize
+    $(window).resize(function() {
+      applyTargetBlank();
+    });
+  });
+
+  */
