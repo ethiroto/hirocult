@@ -1,6 +1,6 @@
 
 //Set song names here!!
-var songFiles = ['star_shaped','wings23','toss_keys','punch_face'];
+var songFiles = ['star_shaped','wings23','toss_keys'];
 
 //This sends it to localStorage as a JSON string of the array (parse it in the musicPlayer Script)
 localStorage.setItem('secretSongFiles', JSON.stringify(songFiles));
