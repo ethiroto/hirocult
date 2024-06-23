@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('.alert-container').removeAttr('target');
 
         $('.alert-container').on('click',function(){
-            parent.location.href = 'https://open.spotify.com/track/7yaguJ94pkJ56uGBEgM7wJ?si=85b17335ddf74689';
+            parent.location.href = 'https://ffm.to/hiro-thinktwice';
         })
       }
     }
