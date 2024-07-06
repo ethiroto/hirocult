@@ -10,6 +10,7 @@ function addVideo(videoName,videoLink){
 addVideo('Automatic','https://www.youtube.com/embed/BXYjJ5zIrAQ?si=29ITQCrqfmCXf0tG')
 addVideo('dreams','https://www.youtube.com/embed/z63cjCbOU8I?si=P1bUz7BtsQ0StKQ7');
 addVideo('moron','https://www.youtube.com/embed/Aux_E9aJJic?si=-LC2_h63Ma5QzidX');
+addVideo('THINK TWICE','https://www.youtube.com/embed/TkHw4ZRvixU?si=wjjYfYDGsC4DVq-H')
 
 
 console.log(videoList);

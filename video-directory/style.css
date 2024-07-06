@@ -32,7 +32,7 @@ body {
 
 .video-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* This will create a 5-column grid */
+    grid-template-columns: repeat(3, 1fr); /* This will create a 5-column grid */
     grid-gap: 4px; /* This sets the gap between grid items */
     align-content: start;
     padding:15px;
