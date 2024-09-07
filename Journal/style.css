@@ -76,7 +76,7 @@ body{
 .entry-img img{
     width:200px;
     height:auto;
-    margin-top:40px;
+    margin-top:30px;
 }
 .line-break {
     overflow-x: auto; /* or overflow: auto; if you want vertical overflow too */
