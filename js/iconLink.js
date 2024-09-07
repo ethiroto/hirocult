@@ -1,6 +1,6 @@
 //These are initial for desktop
 let apps = [
-    { icon: "videoPlayer-icon", window: "video-player", state: "open" },
+    { icon: "videoPlayer-icon", window: "video-player", state: "closed" },
     { icon: "music-player-icon", window: "music-player-window", state: "open"},
     { icon: "unreleased-music-icon", window: "music-directory-window", state: "closed" },
     { icon: "video-folder-icon", window: "video-directory-window", state: "closed" },
@@ -8,7 +8,7 @@ let apps = [
     {icon:"alert-bulletin-icon",window:"bulletin-window",state:"open"},
     {icon:"secret-music-icon", window:"secret-music-directory-window",state:"closed"},
     {icon:"shop-icon",window:"shop-window",state:'closed'},
-    {icon:"journal-icon",window:"journal-window",state:'closed'}
+    {icon:"journal-icon",window:"journal-window",state:'open'}
 ];
 
 
@@ -18,11 +18,11 @@ let mobileApps = [
     { icon: "music-player-icon", window: "music-player-window", state: "open"},
     { icon: "unreleased-music-icon", window: "music-directory-window", state: "closed" },
     { icon: "video-folder-icon", window: "video-directory-window", state: "closed" },
-    { icon: "about-icon",window:"about-window",state:"open"},
+    { icon: "about-icon",window:"about-window",state:"closed"},
     {icon:"alert-bulletin-icon",window:"bulletin-window",state:"open"},
     {icon:"secret-music-icon", window:"secret-music-directory-window",state:"closed"},
     {icon:"shop-icon",window:"shop-window",state:'closed'},
-    {icon:"journal-icon",window:"journal-window",state:'closed'}
+    {icon:"journal-icon",window:"journal-window",state:'open'}
 ];
 
 if ($(window).width()<800){

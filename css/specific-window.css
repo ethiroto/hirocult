@@ -6,6 +6,25 @@ body.desktop {
     width: 575px;
     height: 330px;
 }
+.desktop-item {
+    width:80px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    font: 16px 'Windows95', sans-serif;
+    cursor: pointer;
+    margin-bottom:30px;
+  }
+
+.desktop-item img{
+    width: 50px;
+    height: auto;
+    margin-bottom:3px;
+}
+
+
 
 #video-player-iframe{
     width: 575px;
@@ -15,6 +34,7 @@ body.desktop {
     bottom:30vh ;
     left: 20vw;
 }
+
 
 #music-directory-iframe{
     width: 490px;
@@ -80,21 +100,40 @@ body.desktop {
     top: 20vh;
     right: 20vw;
 }
-}
-
 #journal-iframe{
     width: 575px;
     height: 330px;
 }
 #journal-window{
     bottom:30vh ;
-    left: 20vw;
+    left: 15vw;
 }
+}
+
 body.mobile { /* iframe is to adjust window size, window is to adjust position*/
 
+
+    
     #test-iframe{
         width: 575px;
         height: 330px;
+    }
+    .desktop-item {
+        width:60px;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align:center;
+        font: 16px 'Windows95', sans-serif;
+        cursor: pointer;
+        margin-bottom:25px;
+      }
+    
+    .desktop-item img{
+        width: 40px;
+        height: auto;
+        margin-bottom:2px;
     }
     
     #video-player-iframe{
@@ -192,3 +231,11 @@ body.mobile { /* iframe is to adjust window size, window is to adjust position*/
         position:relative;
     }
     } 
+    #journal-iframe{
+        width: 575px;
+        height: 330px;
+    }
+    #journal-window{
+        bottom:10vh ;
+        left: 10vw;
+    }

@@ -1,6 +1,6 @@
 body{
     background-color: #000000;
-    color:#d6ff86;
+    color:#ffffff;
 }
 
 .journal-title{
@@ -16,30 +16,52 @@ body{
     transform: translateY(-5px);
   }
 
+.entry-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-container{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:25px;
+}
+
+.entry-container .entry-img{
+    align-self: center;
+    margin-right:20px;
+}
 .entry{
     display:flex;
     flex-direction: column;
     gap:20px;
-    margin-bottom:30px;
     padding:20px;
+    font-family: 'Menlo';
+    width:60%;
 }
 
 .entry-body{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    gap:20px;
 }
 
 .entry-date{
     font-size: 20px;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+.entry-date .time{
+    font-size:10px;
 }
 .entry-title{
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .entry-txt{
-    width:60%;
     font-size: 18px;
 }
 
@@ -47,10 +69,33 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-40%); /* Adjust for the image's own height */
+    text-align: center;
+
 
 }
 .entry-img img{
     width:200px;
     height:auto;
+    margin-top:40px;
 }
+.line-break {
+    overflow-x: auto; /* or overflow: auto; if you want vertical overflow too */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    font-size: 24px;
+  }
+.entry-count{
+    position:relative;
+    align-self: flex-end;
+    justify-self: flex-end;
+    transform: translateY(22px);
+    font-size: 6px;
+    font-family: 'Windows95';
+}
+
+@font-face {
+    font-family: 'Windows95';
+    src: url('../fonts/w95fa.woff2') format('woff2');
+    /* Add 'format' based on your font file format */
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -107,7 +107,7 @@ body{
     padding-left: 30px;
   }
 
-.desktop-item {
+  .desktop-item {
     width:80px;
     height: auto;
     display:flex;
@@ -124,6 +124,8 @@ body{
     height: auto;
     margin-bottom:3px;
 }
+
+
 
 .end-bar{
     display: flex;
