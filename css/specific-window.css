@@ -82,6 +82,14 @@ body.desktop {
 }
 }
 
+#journal-iframe{
+    width: 575px;
+    height: 330px;
+}
+#journal-window{
+    bottom:30vh ;
+    left: 20vw;
+}
 body.mobile { /* iframe is to adjust window size, window is to adjust position*/
 
     #test-iframe{

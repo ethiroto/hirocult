@@ -7,7 +7,8 @@ let apps = [
     { icon: "about-icon",window:"about-window",state:"closed"},
     {icon:"alert-bulletin-icon",window:"bulletin-window",state:"open"},
     {icon:"secret-music-icon", window:"secret-music-directory-window",state:"closed"},
-    {icon:"shop-icon",window:"shop-window",state:'closed'}
+    {icon:"shop-icon",window:"shop-window",state:'closed'},
+    {icon:"journal-icon",window:"journal-window",state:'closed'}
 ];
 
 
@@ -20,7 +21,8 @@ let mobileApps = [
     { icon: "about-icon",window:"about-window",state:"open"},
     {icon:"alert-bulletin-icon",window:"bulletin-window",state:"open"},
     {icon:"secret-music-icon", window:"secret-music-directory-window",state:"closed"},
-    {icon:"shop-icon",window:"shop-window",state:'closed'}
+    {icon:"shop-icon",window:"shop-window",state:'closed'},
+    {icon:"journal-icon",window:"journal-window",state:'closed'}
 ];
 
 if ($(window).width()<800){
@@ -118,6 +120,13 @@ $(document).ready(function() {
 //APPLY ZOOM TO CHANGING WINDOW SIZE
     //CHANGE THE WINDOW SCALER HERE
     let windowSizeScaler = {600: '0.7', 450: '0.6', 400: '0.5'};
+    if (navigator.userAgent.indexOf("Chrome") != -1) {
+        // It's Chrome
+        windowSizeScaler = {600: '1', 450: '1', 400: '1'};
+      } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+        // It's Firefox
+        // Leave windowSizeScaler as it is (original values)
+      } 
 
     // Function to apply the appropriate zoom based on the current window size
     function applyZoomBasedOnWindowSize() {
