@@ -36,7 +36,7 @@ body{
     flex-direction: column;
     gap:20px;
     padding:20px;
-    font-family: 'Menlo';
+    font-family: 'Menlos';
     width:60%;
 }
 
@@ -96,6 +96,12 @@ body{
     font-family: 'Windows95';
     src: url('../fonts/w95fa.woff2') format('woff2');
     /* Add 'format' based on your font file format */
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Menlos';
+    src: url('../fonts/Menlo-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
