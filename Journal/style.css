@@ -91,6 +91,9 @@ body{
     font-size: 6px;
     font-family: 'Windows95';
 }
+.bottom{
+    height:40px;
+}
 
 @font-face {
     font-family: 'Windows95';
@@ -105,3 +108,5 @@ body{
     font-weight: normal;
     font-style: normal;
   }
+
+
