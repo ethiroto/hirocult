@@ -75,7 +75,8 @@ body{
 }
 .entry-img img{
     width:200px;
-    height:auto;
+    height:215px;
+    object-fit: contain;
     margin-top:30px;
 }
 .line-break {
