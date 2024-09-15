@@ -1,6 +1,10 @@
+html {
+    overflow-y: scroll; /* Always show vertical scrollbar */
+  }
 body{
     background-color: #000000;
     color:#ffffff;
+      
 }
 
 .journal-title{
