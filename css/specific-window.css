@@ -94,7 +94,7 @@ body.desktop {
 
 #shop-iframe{
     width: 310px;
-    height: 450px;
+    height: 650px;
 }
 #shop-window{
     top: 20vh;
@@ -206,16 +206,16 @@ body.mobile { /* iframe is to adjust window size, window is to adjust position*/
 
     #shop-iframe{
         width: 315px;
-        height: 500px;
+        height: 650px;
     }
     @media (max-width: 600px) {
         #shop-iframe {
-            height:550px;
+            height:650px;
         }
     }
     @media (max-width: 400px) {
         #shop-iframe {
-            height:630px;
+            height:650px;
         }
     }
     #shop-window{
