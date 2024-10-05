@@ -20,6 +20,16 @@ function siteWork(songArray) {
 
 }
 
+//soundstart hotfix:
+var firstClick = true; 
+$(window).on('click',function(){
+    if (firstClick){
+        $('#startupSound')[0].play();
+        firstClick = false; // Prevent it from playing again
+    }
+});
+
+
 function createClickHandler(songNumber, songName) {
     return function() {
         var songSent = String(songNumber);

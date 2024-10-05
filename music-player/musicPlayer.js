@@ -8,8 +8,12 @@ var songsUnlocked= JSON.parse(localStorage.getItem('unlockedState'));
 
 
 //need to play a starting sound (for some reason ios mobile needs this first now)
+var firstClick = true; 
 $(window).on('click',function(){
-    $('#startupSound')[0].play();
+    if (firstClick){
+        $('#startupSound')[0].play();
+        firstClick = false; // Prevent it from playing again
+    }
 });
 
 
