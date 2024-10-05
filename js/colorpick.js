@@ -45,4 +45,5 @@ for (let color in colors){
 }
 colorPickIcon.on('click', function() {
     toggleDisplay(colorPickerPopup);
+    $('#startupSound')[0].play();
 });
