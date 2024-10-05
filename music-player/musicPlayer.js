@@ -7,6 +7,11 @@ var secretSongNames= JSON.parse(localStorage.getItem('secretSongFiles'));
 var songsUnlocked= JSON.parse(localStorage.getItem('unlockedState'));
 
 
+//need to play a starting sound (for some reason ios mobile needs this first now)
+$(window).on('click',function(){
+    $('#startupSound')[0].play();
+});
+
 
 //need to register the initial # of songNames
 const initialSongNamesLength=songNames.length;
