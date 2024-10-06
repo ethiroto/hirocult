@@ -22,7 +22,7 @@
               
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-    
+    <script src="js/soundFix.js" defer></script>
     <script src="js/colorpick.js" defer></script>
     <script src="js/window-control.js" defer></script>
     <script src="js/iconLink.js" defer></script>
@@ -134,7 +134,7 @@
         <div class="window-controls">
             <div class="top-btn header-item minimize" style="background-image: url('icons/minimize.png');"></div>
             <div class="top-btn header-item maximize" style="background-image: url('icons/maximize.png');"></div>
-            <div class="top-btn header-item close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
+            <div class="top-btn header-item close" id="music-directory-close" style="background-image: url('icons/x.png');"><div class="close-enhancer"></div></div>
         </div>
     </div>
     <iframe class="window-content" id="music-directory-iframe" src="music-directory/index.html" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0"></iframe>    
