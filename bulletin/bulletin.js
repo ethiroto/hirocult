@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('.alert-container').removeAttr('target');
 
         $('.alert-container').on('click',function(){
-            parent.location.href = 'https://ffm.to/appalachia-hiro';
+            parent.location.href = 'https://ffm.to/guppy-hiro';
         })
       }
     }
