@@ -16,8 +16,6 @@ function siteWork(songArray) {
         // Add the song div to the directory
         directory.append(songDiv);
     });
-
-
 }
 
 //soundstart hotfix:
