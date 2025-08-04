@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('.alert-container').removeAttr('target');
 
         $('.alert-container').on('click',function(){
-            parent.location.href = 'https://ffm.to/started-a-war';
+            parent.location.href = 'https://ffm.to/hiro-7ules';
         })
       }
     }
