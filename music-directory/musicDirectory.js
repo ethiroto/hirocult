@@ -1,6 +1,6 @@
 
 //Set song names here!!
-var songFiles = ['let_my_baby_stay','species','No_Wonder','I_STG','Many_Thoughts','Everytime','second_nature','Left-arm-missing','sugar','tears','pastlife','toothpaste','u-f-o'];
+var songFiles = ['let_my_baby_stay','species','No_Wonder','I_STG','Many_Thoughts','Everytime','second_nature','Left-arm-missing','sugar','tears','at_the_nd','toothpaste','u-f-o'];
 
 //This sends it to localStorage as a JSON string of the array (parse it in the musicPlayer Script)
 localStorage.setItem('songFiles', JSON.stringify(songFiles));
